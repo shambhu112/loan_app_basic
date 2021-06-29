@@ -81,3 +81,14 @@ portfolio <- relocate(portfolio , c(name , country , exposure , var, default_pro
 
 write_rds(portfolio , "data/portfolio.rds")
 
+
+
+### country level simulation ----
+
+port <- controller$dataset_by_name("portfolio")
+
+by_cty_risk <- port %>% group_by(country) %>% summarise(var = sum(var))
+
+
+
+
