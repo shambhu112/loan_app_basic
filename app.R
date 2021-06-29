@@ -66,34 +66,34 @@ ui <- bs4Dash::dashboardPage(
 # Whisker:  Menus
         bs4Dash::menuItem(
           "Introduction" ,
-           tabName = "intro_tab" ,
+           tabName = "intro_tab" , 
           icon = icon("leanpub")
         ),
         bs4Dash::menuItem(
           "Lending Book" ,
-           tabName = "core_tab" ,
+           tabName = "core_tab" , 
           icon = icon("credit-card")
         ),
         bs4Dash::menuItem(
           "Data Exploration" ,
-
+          
           icon = icon("chart-bar")
-              ,
+              , 
             bs4Dash::menuSubItem(
                text = "Visualize" ,
                tabName = "explore_tab" ,
                icon = icon("circle-thin")
-             )  ,
-
+             )  , 
+             
             bs4Dash::menuSubItem(
                text = "Correlations" ,
                tabName = "corr_tab" ,
                icon = icon("cubes")
-             )
+             ) 
         ),
         bs4Dash::menuItem(
           "Credits" ,
-           tabName = "credits_tab" ,
+           tabName = "credits_tab" , 
           icon = icon("heart")
         )
           )
@@ -112,7 +112,7 @@ ui <- bs4Dash::dashboardPage(
           create_tab_module(tab_module = "core_tab" , registry , controller) ,
           create_tab_module(tab_module = "explore_tab" , registry , controller) ,
           create_tab_module(tab_module = "corr_tab" , registry , controller) ,
-          create_tab_module(tab_module = "credits_tab" , registry , controller)
+          create_tab_module(tab_module = "credits_tab" , registry , controller) 
       )
     ) # Close of tab items
 )

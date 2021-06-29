@@ -150,10 +150,10 @@ document here \# TODO Link
 
     the above 4 line items are needed or all modules to talk to shinyspring. For pre-built modules they are defined in package and hence you do not need to wire them explicitly here. Here is the module registry for pre-built modules. Browse these to get an idea how wiring modules to shinyspring. [Link here](https://docs.google.com/spreadsheets/d/15HXspcKqGyDYAM1Jfa7SFjCALHMWTPyTbjrXnWuHY2I/)
 
-4.  Now , let us write the core lending modules. Cut and paste the code
+1.  Now , let us write the core lending modules. Cut and paste the code
     from here (TODO) in your `lending_mod.R` file
 
-5.  Finally , let us make sure that you source the `lending_mod.R` on
+2.  Finally , let us make sure that you source the `lending_mod.R` on
     app startup. Include the following line `source("lending_mod.R")` in
     `on_startup.R` . on\_startup.R was created when you created the
     project.
